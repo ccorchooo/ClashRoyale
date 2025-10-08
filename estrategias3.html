@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clash Royale - Estrategias</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav id="nav_inicio">
+      <div id="contenido_nav">
+        <a href="index.html"
+          ><img id="logo" src="img/logo.jpg" alt="Logo"
+        /></a>
+        <h1>Clash Royale</h1>
+      </div>
+      <div id="contenido_nav2">
+        <ul id="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="index.html#celular">Descripción</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="cartas.html">Cartas</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="cartas.html#cartas">Cartas</a></li>
+                <li><a href="cartas.html#link_pdf">PDF</a></li>
+                <li>
+                  <a href="cartas.html#tabla_cartas">Tabla de Estadísticas</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="estrategias.html"  class="seleccionado">Estrategias</a>
+            <div class="dropdown">
+              <ul>
+                <li>
+                  <a href="estrategias.html#estrategias_general"
+                    >Estrategias generales</a
+                  >
+                </li>
+                <li><a href="estrategias1.html">Arena 1</a></li>
+                <li><a href="estrategias2.html">Arena 2</a></li>
+                <li><a href="estrategias3.html">Arena 3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="noticias.html">Noticias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                <li><a href="videos.html#videos">Videos</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="tienda.html">Tienda</a>
+            <div class="dropdown">
+              <ul>
+                <li>
+                  <a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a>
+                </li>
+                <li>
+                  <a href="tienda.html#pase_tienda">Pase de diamante</a>
+                </li>
+                <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div id="cuenta">
+          <input type="checkbox" id="login" />
+          <label for="login" id="label_login"
+            ><i class="fa-solid fa-circle-user"></i
+          ></label>
+          <div id="login_form" class="form_usuario">
+            <h3>Iniciar Sesión</h3>
+            <form>
+              <label for="usuario_login">Usuario:</label>
+              <input type="text" id="usuario_login" required />
+              <label for="contraseña_login">Contraseña:</label>
+              <input type="password" id="contraseña_login" required />
+              <input type="submit" value="Iniciar Sesión" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="btn_arena">
+      <label for="check_arena" id="label_arena">Seleccionar Arena</label>
+      <input type="checkbox" id="check_arena">
+      <aside id="seleccionar_arena">
+        <div id="titulo_arena">
+          <h2>Arena</h2>
+        </div>
+        <div id="arenas">
+          <div id="arena_1" class="arena">
+            <a href="estrategias1.html"><img src="img/arenas/arena1/arena1.png" alt="Arena 1"></a>
+            <h2>Estadio duende</h2>
+            <a href="estrategias1.html"><img src="img/arenas/arena1/arena1_trofeos.png" alt="Trofeos Arena 1"></a>
+          </div>
+          <div id="arena_2" class="arena">
+            <a href="estrategias2.html"><img src="img/arenas/arena2/arena2.png" alt="Arena 2"></a>
+            <h2>Foso de huesos</h2>
+            <a href="estrategias2.html"><img src="img/arenas/arena2/arena2_trofeos.png" alt="Trofeos Arena 2"></a>
+          </div>
+          <div id="arena_3" class="arena">
+            <a href="estrategias3.html"><img src="img/arenas/arena3/arena3.png" alt="Arena 3"></a>
+            <h2>Coliseo bárbaro</h2>
+            <a href="estrategias3.html"><img src="img/arenas/arena3/arena3_trofeos.png" alt="Trofeos Arena 3"></a>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <div id="btn_volverestrategias">
+      <a href="estrategias.html"><p>Volver a Estrategias</p></a>
+    </div>
+    <section class="banner">
+      <img src="img/banner_estrategias.jpg" alt="Banner Estrategias">
+      <h2>Estrategias</h2>
+    </section>
+    <section id="estrategias">
+      <article id="mazo_estrategias">
+        <div id="arena_estrategias">
+          <h3>Arena 3</h3>
+          <p>Mazo recomendado</p>
+        </div>
+        <div id="cartas_mazo_estrategias">
+          <div class="caja_cartas">
+            <div class="carta especial">
+              <div class="frente" id="ariete_frente">
+                <h3>Ariete de batalla</h3>
+              </div>
+              <div class="atras" id="ariete_atras">
+                <h3>Ariete de batalla</h3>
+                <p>Elixir: 4</p>
+                <p>Vida: 967</p>
+                <p>Daño: 286</p>
+                <p>Tipo: Tropa</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta comun">
+              <div class="frente" id="caba_frente">
+                <h3>Caballero</h3>
+              </div>
+              <div class="atras" id="caba_atras">
+                <h3>Caballero</h3>
+                <p>Elixir: 3</p>
+                <p>Vida: 1766</p>
+                <p>Daño: 202</p>
+                <p>Tipo: Tropa</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta comun">
+              <div class="frente" id="esbirros_frente">
+                <h3>Esbirros</h3>
+              </div>
+              <div class="atras" id="esbirros_atras">
+                <h3>Esbirros</h3>
+                <p>Elixir: 3</p>
+                <p>Vida: 230</p>
+                <p>Daño: 117</p>
+                <p>Tipo: Tropa</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta comun">
+              <div class="frente" id="arque_frente">
+                <h3>Arqueras</h3>
+              </div>
+              <div class="atras" id="arque_atras">
+                <h3>Arqueras</h3>
+                <p>Elixir: 3</p>
+                <p>Vida: 304</p>
+                <p>Daño: 112</p>
+                <p>Tipo: Tropa</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta comun">
+              <div class="frente" id="dclanza_frente">
+                <h3>Duendes con lanza</h3>
+              </div>
+              <div class="atras" id="dclanza_atras">
+                <h3>Duendes con lanza</h3>
+                <p>Elixir: 2</p>
+                <p>Vida: 133</p>
+                <p>Daño: 81</p>
+                <p>Tipo: Tropa</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta especial">
+              <div class="frente" id="lapida_frente">
+                <h3>Lápida</h3>
+              </div>
+              <div class="atras" id="lapida_atras">
+                <h3>Lápida</h3>
+                <p>Elixir: 3</p>
+                <p>Vida: 529</p>
+                <p>Daño: 81</p>
+                <p>Tipo: Estructura</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta especial">
+              <div class="frente" id="bolafuego_frente">
+                <h3>Bola de fuego</h3>
+              </div>
+              <div class="atras" id="bolafuego_atras">
+                <h3>Bola de fuego</h3>
+                <p>Elixir: 4</p>
+                <p>Daño: 688</p>
+                <p>Daño a torre: 207</p>
+                <p>Tipo: Hechizo</p>
+              </div>
+            </div>
+          </div>
+          <div class="caja_cartas">
+            <div class="carta comun">
+              <div class="frente" id="flechas_frente">
+                <h3>Flechas</h3>
+              </div>
+              <div class="atras" id="flechas_atras">
+                <h3>Flechas</h3>
+                <p>Elixir: 3</p>
+                <p>Daño: 366</p>
+                <p>Daño a torre: 93</p>
+                <p>Tipo: Hechizo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="sociales" id="personas">
+      <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+      <p><a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a></p>
+    </div>
+    <div class="sociales">
+      <p>Curso: 3M</p>
+      <p>Saint Mary of the Hills School Sede Pilar</p>
+      <a href="https://stmary.edu.ar" target="_blank"><img id="logocolegio" src="img/stmary.png"
+          alt="Logo de Saint Mary"></a>
+    </div>
+    <div class="sociales" id="iconos">
+      <a href="https://www.instagram.com/stmaryofthehillsschool" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j" target="_blank"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>

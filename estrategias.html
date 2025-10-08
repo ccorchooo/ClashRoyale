@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Clash Royale - Estrategias</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav_inicio">
+        <div id="contenido_nav">
+          <a href="index.html"
+            ><img id="logo" src="img/logo.jpg" alt="Logo"
+          /></a>
+          <h1>Clash Royale</h1>
+        </div>
+        <div id="contenido_nav2">
+          <ul id="menu">
+            <li>
+              <a href="index.html">Inicio</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="index.html#celular">Descripción</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="cartas.html">Cartas</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="cartas.html#cartas">Cartas</a></li>
+                  <li><a href="cartas.html#link_pdf">PDF</a></li>
+                  <li>
+                    <a href="cartas.html#tabla_cartas">Tabla de Estadísticas</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="estrategias.html"  class="seleccionado">Estrategias</a>
+              <div class="dropdown">
+                <ul>
+                  <li>
+                    <a href="estrategias.html#estrategias_general"
+                      >Estrategias generales</a
+                    >
+                  </li>
+                  <li><a href="estrategias1.html">Arena 1</a></li>
+                  <li><a href="estrategias2.html">Arena 2</a></li>
+                  <li><a href="estrategias3.html">Arena 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="noticias.html">Noticias</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                  <li><a href="videos.html#videos">Videos</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="tienda.html">Tienda</a>
+              <div class="dropdown">
+                <ul>
+                  <li>
+                    <a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a>
+                  </li>
+                  <li>
+                    <a href="tienda.html#pase_tienda">Pase de diamante</a>
+                  </li>
+                  <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div id="cuenta">
+            <input type="checkbox" id="login" />
+            <label for="login" id="label_login"
+              ><i class="fa-solid fa-circle-user"></i
+            ></label>
+            <div id="login_form" class="form_usuario">
+              <h3>Iniciar Sesión</h3>
+              <form>
+                <label for="usuario_login">Usuario:</label>
+                <input type="text" id="usuario_login" required />
+                <label for="contraseña_login">Contraseña:</label>
+                <input type="password" id="contraseña_login" required />
+                <input type="submit" value="Iniciar Sesión" />
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="btn_arena">
+        <label for="check_arena" id="label_arena">Seleccionar Arena</label>
+        <input type="checkbox" id="check_arena" />
+        <aside id="seleccionar_arena">
+          <div id="titulo_arena">
+            <h2>Arena</h2>
+          </div>
+          <div id="arenas">
+            <div id="arena_1" class="arena">
+              <a href="estrategias1.html"
+                ><img src="img/arenas/arena1/arena1.png" alt="Arena 1"
+              /></a>
+              <h2>Estadio duende</h2>
+              <a href="estrategias1.html"
+                ><img
+                  src="img/arenas/arena1/arena1_trofeos.png"
+                  alt="Trofeos Arena 1"
+              /></a>
+            </div>
+            <div id="arena_2" class="arena">
+              <a href="estrategias2.html"
+                ><img src="img/arenas/arena2/arena2.png" alt="Arena 2"
+              /></a>
+              <h2>Foso de huesos</h2>
+              <a href="estrategias2.html"
+                ><img
+                  src="img/arenas/arena2/arena2_trofeos.png"
+                  alt="Trofeos Arena 2"
+              /></a>
+            </div>
+            <div id="arena_3" class="arena">
+              <a href="estrategias3.html"
+                ><img src="img/arenas/arena3/arena3.png" alt="Arena 3"
+              /></a>
+              <h2>Coliseo bárbaro</h2>
+              <a href="estrategias3.html"
+                ><img
+                  src="img/arenas/arena3/arena3_trofeos.png"
+                  alt="Trofeos Arena 3"
+              /></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <section class="banner">
+        <img src="img/banner_estrategias.jpg" alt="Banner Estrategias" />
+        <h2>Estrategias</h2>
+      </section>
+      <section id="estrategias_general">
+        <h3 id="n1_estrategias">Conoce tu mazo</h3>
+        <p>
+          Antes de jugar, asegúrate de conocer bien las cartas de tu mazo: su
+          coste de elixir, sus fortalezas y debilidades. Mantén un equilibrio
+          entre cartas ofensivas, defensivas y de soporte.
+        </p>
+        <h3 id="n2_estrategias">Administra bien el elixir</h3>
+        <p>
+          Evita quedarte sin elixir de manera innecesaria y no gastes todo en un
+          solo ataque si no estás seguro de que funcionará. Aprende a hacer
+          intercambios positivos de elixir.
+        </p>
+        <h3 id="n3_estrategias">Defiende antes de atacar</h3>
+        <p>
+          No te apresures a atacar. Primero asegúrate de que tu torre no esté en
+          peligro. Una buena defensa te permitirá acumular tropas para un
+          contraataque poderoso.
+        </p>
+        <h3 id="n4_estrategias">Controla el ciclo de cartas</h3>
+        <p>
+          Juega tus cartas de manera que siempre tengas disponibles tus mejores
+          defensas para las cartas clave del oponente.
+        </p>
+        <h3 id="n5_estrategias">Observa al rival</h3>
+        <p>
+          Presta atención a qué cartas usa el oponente y en qué rotación. Esto
+          te permitirá anticiparte y planificar ataques más efectivos.
+        </p>
+        <h3 id="n6_estrategias">Aprovecha el tiempo extra</h3>
+        <p>
+          En el último minuto, el elixir se regenera el doble de rápido. Usa
+          esto para montar ataques combinados y derribar torres
+        </p>
+        <h3 id="n7_estrategias">No ignores las torres laterales</h3>
+        <p>
+          Si recibes daño en una torre, defiéndela lo justo para que quede con
+          la mayor vida posible, evitando perderla con un hechizo al final.
+        </p>
+        <h3 id="n8_estrategias">Usa los hechizos con precisión</h3>
+        <p>
+          Intenta golpear el mayor número de tropas o estructuras posible con
+          cada lanzamiento. Un buen hechizo puede cambiar el curso de la
+          partida.
+        </p>
+        <h3 id="n9_estrategias">Mantén la calma</h3>
+        <p>
+          Incluso si vas perdiendo, no entres en pánico. A veces un buen
+          contraataque en el tiempo extra puede darle la vuelta al resultado.
+        </p>
+        <h3 id="n10_estrategias">Practica y ajusta tu mazo</h3>
+        <p>
+          Juega varias partidas para identificar qué funciona y qué no. Ajusta
+          tu mazo hasta que se adapte a tu estilo y al meta actual.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <div class="sociales" id="personas">
+        <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+        <p>
+          <a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a>
+        </p>
+      </div>
+      <div class="sociales">
+        <p>Curso: 3M</p>
+        <p>Saint Mary of the Hills School Sede Pilar</p>
+        <a href="https://stmary.edu.ar" target="_blank"
+          ><img id="logocolegio" src="img/stmary.png" alt="Logo de Saint Mary"
+        /></a>
+      </div>
+      <div class="sociales" id="iconos">
+        <a
+          href="https://www.instagram.com/stmaryofthehillsschool"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

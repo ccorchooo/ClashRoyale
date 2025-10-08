@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Clash Royale - Noticias</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="img/icon.ico" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <nav id="nav_inicio">
+        <div id="contenido_nav">
+          <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a>
+          <h1>Clash Royale</h1>
+        </div>
+        <div id="contenido_nav2">
+          <ul id="menu">
+            <li>
+              <a href="index.html">Inicio</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="index.html#celular">Descripción</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="cartas.html">Cartas</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="cartas.html#cartas">Cartas</a></li>
+                  <li><a href="cartas.html#link_pdf">PDF</a></li>
+                  <li><a href="cartas.html#tabla_cartas">Tabla de Estadísticas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="estrategias.html">Estrategias</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="estrategias.html#estrategias_general">Estrategias generales</a></li>
+                  <li><a href="estrategias1.html">Arena 1</a></li>
+                  <li><a href="estrategias2.html">Arena 2</a></li>
+                  <li><a href="estrategias3.html">Arena 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="noticias.html" class="seleccionado">Noticias</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                  <li><a href="videos.html#videos">Videos</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="tienda.html">Tienda</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a></li>
+                  <li><a href="tienda.html#pase_tienda">Pase de diamante</a></li>
+                  <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div id="cuenta">
+            <input type="checkbox" id="login">
+            <label for="login" id="label_login"><i class="fa-solid fa-circle-user"></i></label>
+            <div id="login_form" class="form_usuario">
+              <h3>Iniciar Sesión</h3>
+              <form>
+                <label for="usuario_login">Usuario:</label>
+                <input type="text" id="usuario_login" required>
+                <label for="contraseña_login">Contraseña:</label>
+                <input type="password" id="contraseña_login" required>
+                <input type="submit" value="Iniciar Sesión">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <img src="img/banner_noticias.jpg" alt="Banner Noticias" />
+        <h2>Noticias</h2>
+      </section>
+      <nav id="nav_noticias">
+        <section id="tipo_noticias">
+          <ul>
+            <li><a href="noticias.html" class="seleccionado">Noticias</a></li>
+            <li><a href="videos.html"class="seleccionado">Videos</a></li>
+          </ul>
+        </section>
+        <section id="buscar_noticias">
+          <input type="text" placeholder="Buscar noticias..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+      </nav>
+      <section id="noticias">
+        <article class="noticia">
+          <input type="checkbox" class="abrir_noticia" id="noticia1_check" />
+          <div class="selector_noticia" id="noticia1_selectorimg">
+            <div class="descripcion_noticia">
+              <label for="noticia1_check"></label>
+              <h3>El viaje del clan</h3>
+              <p>¡Todos a bordo!</p>
+            </div>
+          </div>
+          <div class="contenido_noticias" id="noticia1_contenido">
+            <img
+              class="img_contenidonoticia"
+              src="img/noticias/noticia1.jpg"
+              alt="barco"
+            />
+            <div>
+              <div>
+                <audio src="audio/viajedelclanaudio.mp3" controls>
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+                <p>Audio de la noticia</p>
+              </div>
+              <h3>El viaje del clan</h3>
+
+              <p>
+                Prepárate para emprender una nueva aventura junto con tus
+                aliados en el viaje del clan. Trabaja en equipo para conseguir
+                coronas en las batallas y ganar recompensas increíbles como
+                cofres, cubos de la suerte ¡y mucho más!
+              </p>
+
+              <h4>¿Cuándo?</h4>
+              <p>Del 22 al 29 de septiembre</p>
+
+              <h4>No abandones tu clan</h4>
+              <p>
+                Todo el progreso está vinculado al clan, por lo que deberás
+                pertenecer a uno antes de que comience el evento para poder
+                participar. Si abandonas el clan o te expulsan de él, ya no
+                podrás optar a las recompensas, ¡así que pórtate bien y evita
+                que te den la patada!
+              </p>
+
+              <h4>Cómo reclamar las recompensas</h4>
+              <p>
+                Cuando el clan alcance nuevas metas, recibirás recompensas en
+                función de tu arena actual. Para reclamarlas, también deberás
+                ganar una cantidad mínima de 15 coronas antes de que tu clan
+                alcance la última meta o el evento termine.
+              </p>
+            </div>
+          </div>
+        </article>
+        <article class="noticia">
+          <input type="checkbox" class="abrir_noticia" id="noticia2_check" />
+          <div class="selector_noticia" id="noticia2_selectorimg">
+            <div class="descripcion_noticia">
+              <label for="noticia2_check"></label>
+              <h3>Táctica Royale</h3>
+              <p>Reinicio de temporada y líderes nuevos</p>
+            </div>
+          </div>
+          <div class="contenido_noticias" id="noticia2_contenido">
+            <img
+              class="img_contenidonoticia"
+              src="img/noticias/noticia2.jpg"
+              alt="imagen noticia 2"
+            />
+            
+            <div>
+              <div>
+                <audio src="audio/tacticaroyaleaudio.mp3" controls>
+                  Tu navegador no soporta el elemento de audio.
+                </audio>
+                <p>Audio de la noticia</p>
+              </div>
+              <h3>Táctica Royale</h3>
+              <h4>Reinicio de temporada y líderes nuevos</h4>
+              <p>
+                A lo largo de las próximas temporadas, llegarán grandes
+                novedades a Táctica Royale y tenemos muchas ganas de
+                compartirlas.
+              </p>
+              <h4>Reinicio de acero estelar</h4>
+              <p>
+                El primer reinicio del acero estelar (trofeos de Táctica Royale)
+                está a punto de llegar y, con él, una temporada nueva. Eso
+                significa que se acaba la temporada, pero se abre un ciclo nuevo
+                de recompensas y estrategias. ¡Tranquilidad! Aún hay tiempo de
+                ascender en la clasificación y conseguir las últimas victorias
+                antes del reinicio. De ahora en adelante, las temporadas de
+                Táctica Royale durarán en torno a un mes y empezarán la semana
+                antes de que comience la nueva temporada de Clash Royale. Aún
+                están pendientes de confirmar las fechas exactas, pero
+                informaremos a su debido tiempo.
+              </p>
+              <h4>Líderes</h4>
+              <p>
+                ¡El rey Royale no se va a ninguna parte! Seguirá reinando sobre
+                el tablero, y sus cartas se podrán seguir reclamando en el
+                camino de acero estelar. No obstante, con la nueva temporada, la
+                emperatriz espiritual volará en busca de otras aventuras, por lo
+                que veremos rostros nuevos. Pero no pasa nada si ya tienes a la
+                emperatriz espiritual, porque podrás usarla igualmente. Si aún
+                no la has desbloqueado, sigue avanzando por el camino de acero
+                estelar para desbloquearla antes de que empiece la próxima
+                temporada. Aunque sus cartas dejarán de estar disponibles como
+                recompensa, es posible que vuelva en futuras temporadas. También
+                podrás desbloquearla a través de otros medios, como con las
+                ofertas de artículos de personalización especiales de la tienda.
+                A lo largo de las siguientes temporadas, dos nuevos líderes
+                harán acto de presencia en el tablero. Vamos a mantener sus
+                habilidades en secreto por ahora, pero podemos adelantar algo:
+                uno de ellos será alguien completamente nuevo, mientras que el
+                otro será un rostro familiar que regresa de una forma nueva, ¡y
+                con malas pulgas!
+              </p>
+              <h4>Próximos pasos</h4>
+              <p>
+                El reinicio del acero estelar y los nuevos líderes son solo el
+                comienzo. También habrá cartas, modificadores, atributos... ¡y
+                aspectos nuevos! En la arena te aguardan nuevas estrategias,
+                estilos distintos y montones de sorpresas. ¡Nos vemos en la
+                arena!
+              </p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <div class="sociales" id="personas">
+        <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+        <p>
+          <a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a>
+        </p>
+      </div>
+      <div class="sociales">
+        <p>Curso: 3M</p>
+        <p>Saint Mary of the Hills School Sede Pilar</p>
+        <a href="https://stmary.edu.ar" target="_blank"
+          ><img id="logocolegio" src="img/stmary.png" alt="Logo de Saint Mary"
+        /></a>
+      </div>
+      <div class="sociales" id="iconos">
+        <a
+          href="https://www.instagram.com/stmaryofthehillsschool"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+        <a
+          href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j"
+          target="_blank"
+          ><i class="fa-brands fa-youtube"></i
+        ></a>
+        <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"
+          ><i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+  </body>
+</html>

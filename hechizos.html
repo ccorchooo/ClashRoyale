@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clash Royale - Cartas</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav id="nav_inicio">
+      <div id="contenido_nav">
+        <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a>
+        <h1>Clash Royale</h1>
+      </div>
+      <div id="contenido_nav2">
+        <ul id="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="index.html#celular">Descripción</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="cartas.html"  class="seleccionado">Cartas</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="hechizos.html#cartas">Cartas</a></li>
+                <li><a href="hechizos.html#link_pdf">PDF</a></li>
+                <li><a href="hechizos.html#tabla_cartas">Tabla de Estadísticas</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="estrategias.html">Estrategias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="estrategias.html#estrategias_general">Estrategias generales</a></li>
+                <li><a href="estrategias1.html">Arena 1</a></li>
+                <li><a href="estrategias2.html">Arena 2</a></li>
+                <li><a href="estrategias3.html">Arena 3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="noticias.html">Noticias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                <li><a href="videos.html#videos">Videos</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="tienda.html">Tienda</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a></li>
+                <li><a href="tienda.html#pase_tienda">Pase de diamante</a></li>
+                <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div id="cuenta">
+          <input type="checkbox" id="login">
+          <label for="login" id="label_login"><i class="fa-solid fa-circle-user"></i></label>
+          <div id="login_form" class="form_usuario">
+            <h3>Iniciar Sesión</h3>
+            <form>
+              <label for="usuario_login">Usuario:</label>
+              <input type="text" id="usuario_login" required>
+              <label for="contraseña_login">Contraseña:</label>
+              <input type="password" id="contraseña_login" required>
+              <input type="submit" value="Iniciar Sesión">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <img src="img/banner_cartas.webp" alt="Banner Cartas">
+      <h2>Cartas</h2>
+    </section>
+    <nav id="nav_cartas">
+      <section id="tipo_cartas">
+        <ul>
+          <li><a href="cartas.html">Todas</a></li>
+          <li><a href="tropas.html">Tropas</a></li>
+          <li><a href="hechizos.html" class="seleccionado">Hechizos</a></li>
+          <li><a href="estructuras.html">Estructuras</a></li>
+          <li><a href="torres.html">Torres</a></li>
+        </ul>
+      </section>
+      <section id="buscar_cartas">
+        <input type="text" placeholder="Buscar cartas...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </section>
+    </nav>
+    <div id="header_cartas">
+      <div>
+        <h3>Cartas</h3>
+        <p>Cantidad: 5</p>
+      </div>
+      <div id="derecha_header_cartas">
+        <h2>Todas</h2>
+      </div>
+    </div>
+    <section id="cartas">
+      <div class="caja_cartas">
+        <div class="carta comun">
+          <div class="frente" id="flechas_frente">
+            <h3>Flechas</h3>
+          </div>
+          <div class="atras" id="flechas_atras">
+            <h3>Flechas</h3>
+            <p>Elixir: 3</p>
+            <p>Daño: 366</p>
+            <p>Daño a torre: 93</p>
+            <p>Tipo: Hechizo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta especial">
+          <div class="frente" id="terremoto_frente">
+            <h3>Terremoto</h3>
+          </div>
+          <div class="atras" id="terremoto_atras">
+            <h3>Terremoto</h3>
+            <p>Elixir: 3</p>
+            <p>Daño: 243</p>
+            <p>Daño a torre: 156</p>
+            <p>Tipo: Hechizo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta especial">
+          <div class="frente" id="bolafuego_frente">
+            <h3>Bola de fuego</h3>
+          </div>
+          <div class="atras" id="bolafuego_atras">
+            <h3>Bola de fuego</h3>
+            <p>Elixir: 4</p>
+            <p>Daño: 688</p>
+            <p>Daño a torre: 207</p>
+            <p>Tipo: Hechizo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta epico">
+          <div class="frente" id="furia_frente">
+            <h3>Furia</h3>
+          </div>
+          <div class="atras" id="furia_atras">
+            <h3>Furia</h3>
+            <p>Elixir: 2</p>
+            <p>Daño: 179</p>
+            <p>Daño a torre: 54</p>
+            <p>Tipo: Hechizo</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta legendario">
+          <div class="frente" id="tronco_frente">
+            <h3>Tronco</h3>
+          </div>
+          <div class="atras" id="tronco_atras">
+            <h3>Tronco</h3>
+            <p>Elixir: 2</p>
+            <p>Daño: 266</p>
+            <p>Daño a torre: 40</p>
+            <p>Tipo: Hechizo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="link_pdf">
+      <h3>PDF</h3>
+      <a href="pdf/pdfcartas.pdf" target="_blank">Ver todas las cartas y sus estadísticas completas</a>
+    </div>
+    <table id="tabla_cartas">
+      <tr>
+        <th>Nombre</th>
+        <th>Elixir</th>
+        <th>Vida</th>
+        <th>Daño</th>
+        <th>Tipo</th>
+      </tr>
+      <tr>
+        <td>Flechas</td>
+        <td>3</td>
+        <td>-</td>
+        <td>366</td>
+        <td>Hechizo</td>
+      </tr>
+
+      <tr>
+        <td>Terremoto</td>
+        <td>3</td>
+        <td>-</td>
+        <td>243</td>
+        <td>Hechizo</td>
+      </tr>
+      <tr>
+        <td>Bola de fuego</td>
+        <td>4</td>
+        <td>-</td>
+        <td>688</td>
+        <td>Hechizo</td>
+      </tr>
+      <tr>
+        <td>Furia</td>
+        <td>2</td>
+        <td>-</td>
+        <td>179</td>
+        <td>Hechizo</td>
+      </tr>
+      <tr>
+        <td>Tronco</td>
+        <td>2</td>
+        <td>-</td>
+        <td>266</td>
+        <td>Hechizo</td>
+      </tr>
+    </table>
+  </main>
+  <footer>
+    <div class="sociales" id="personas">
+      <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+      <p><a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a></p>
+    </div>
+    <div class="sociales">
+      <p>Curso: 3M</p>
+      <p>Saint Mary of the Hills School Sede Pilar</p>
+      <a href="https://stmary.edu.ar" target="_blank"><img id="logocolegio" src="img/stmary.png"
+          alt="Logo de Saint Mary"></a>
+    </div>
+    <div class="sociales" id="iconos">
+      <a href="https://www.instagram.com/stmaryofthehillsschool" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j" target="_blank"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>

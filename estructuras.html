@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clash Royale - Cartas</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav id="nav_inicio">
+      <div id="contenido_nav">
+        <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a>
+        <h1>Clash Royale</h1>
+      </div>
+      <div id="contenido_nav2">
+        <ul id="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="index.html#celular">Descripción</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="cartas.html"  class="seleccionado">Cartas</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="estructuras.html#cartas">Cartas</a></li>
+                <li><a href="estructuras.html#link_pdf">PDF</a></li>
+                <li><a href="estructuras.html#tabla_cartas">Tabla de Estadísticas</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="estrategias.html">Estrategias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="estrategias.html#estrategias_general">Estrategias generales</a></li>
+                <li><a href="estrategias1.html">Arena 1</a></li>
+                <li><a href="estrategias2.html">Arena 2</a></li>
+                <li><a href="estrategias3.html">Arena 3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="noticias.html">Noticias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                <li><a href="videos.html#videos">Videos</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="tienda.html">Tienda</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a></li>
+                <li><a href="tienda.html#pase_tienda">Pase de diamante</a></li>
+                <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div id="cuenta">
+          <input type="checkbox" id="login">
+          <label for="login" id="label_login"><i class="fa-solid fa-circle-user"></i></label>
+          <div id="login_form" class="form_usuario">
+            <h3>Iniciar Sesión</h3>
+            <form>
+              <label for="usuario_login">Usuario:</label>
+              <input type="text" id="usuario_login" required>
+              <label for="contraseña_login">Contraseña:</label>
+              <input type="password" id="contraseña_login" required>
+              <input type="submit" value="Iniciar Sesión">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="banner">
+      <img src="img/banner_cartas.webp" alt="Banner Cartas">
+      <h2>Cartas</h2>
+    </section>
+    <nav id="nav_cartas">
+      <section id="tipo_cartas">
+        <ul>
+          <li><a href="cartas.html">Todas</a></li>
+          <li><a href="tropas.html">Tropas</a></li>
+          <li><a href="hechizos.html">Hechizos</a></li>
+          <li><a href="estructuras.html" class="seleccionado">Estructuras</a></li>
+          <li><a href="torres.html">Torres</a></li>
+        </ul>
+      </section>
+      <section id="buscar_cartas">
+        <input type="text" placeholder="Buscar cartas...">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </section>
+    </nav>
+    <div id="header_cartas">
+      <div>
+        <h3>Cartas</h3>
+        <p>Cantidad: 6</p>
+      </div>
+      <div id="derecha_header_cartas">
+        <h2>Todas</h2>
+      </div>
+    </div>
+    <section id="cartas">
+      <div class="caja_cartas">
+        <div class="carta comun">
+          <div class="frente" id="canon_frente">
+            <h3>Cañón</h3>
+          </div>
+          <div class="atras" id="canon_atras">
+            <h3>Cañón</h3>
+            <p>Elixir: 3</p>
+            <p>Vida: 824</p>
+            <p>Daño: 212</p>
+            <p>Tipo: Estructura</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta comun">
+          <div class="frente" id="torretesla_frente">
+            <h3>Torre Tesla</h3>
+          </div>
+          <div class="atras" id="torretesla_atras">
+            <h3>Torre Tesla</h3>
+            <p>Elixir: 4</p>
+            <p>Vida: 1152</p>
+            <p>Daño: 220</p>
+            <p>Tipo: Estructura</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta especial">
+          <div class="frente" id="torreinfe_frente">
+            <h3>Torre Infernal</h3>
+          </div>
+          <div class="atras" id="torreinfe_atras">
+            <h3>Torre Infernal</h3>
+            <p>Elixir: 5</p>
+            <p>Vida: 1748</p>
+            <p>Daño: 43</p>
+            <p>Tipo: Estructura</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta especial">
+          <div class="frente" id="lapida_frente">
+            <h3>Lápida</h3>
+          </div>
+          <div class="atras" id="lapida_atras">
+            <h3>Lápida</h3>
+            <p>Elixir: 3</p>
+            <p>Vida: 529</p>
+            <p>Daño: 81</p>
+            <p>Tipo: Estructura</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta epico">
+          <div class="frente" id="ballesta_frente">
+            <h3>Ballesta</h3>
+          </div>
+          <div class="atras" id="ballesta_atras">
+            <h3>Ballesta</h3>
+            <p>Elixir: 6</p>
+            <p>Vida: 1600</p>
+            <p>Daño: 43</p>
+            <p>Tipo: Estructura</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="caja_cartas">
+        <div class="carta especial">
+          <div class="frente" id="forzudo_frente">
+            <h3>Jaula del forzudo</h3>
+          </div>
+          <div class="atras" id="forzudo_atras">
+            <h3>Jaula del forzudo</h3>
+            <p>Elixir: 4</p>
+            <p>Vida: 780</p>
+            <p>Daño: 134</p>
+            <p>Tipo: Estructura</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="link_pdf">
+      <h3>PDF</h3>
+      <a href="pdf/pdfcartas.pdf" target="_blank">Ver todas las cartas y sus estadísticas completas</a>
+    </div>
+
+    <table id="tabla_cartas">
+      <tr>
+        <th>Nombre</th>
+        <th>Elixir</th>
+        <th>Vida</th>
+        <th>Daño</th>
+        <th>Tipo</th>
+      </tr>
+      <tr>
+        <td>Cañon</td>
+        <td>3</td>
+        <td>824</td>
+        <td>212</td>
+        <td>Estructura</td>
+      </tr>
+      <tr>
+        <td>Torre tesla</td>
+        <td>4</td>
+        <td>1152</td>
+        <td>220</td>
+        <td>Estructura</td>
+      </tr>
+      <tr>
+        <td>Torre infernal</td>
+        <td>5</td>
+        <td>1748</td>
+        <td>43</td>
+        <td>Estructura</td>
+      </tr>
+      <tr>
+        <td>Lapida</td>
+        <td>3</td>
+        <td>529</td>
+        <td>81</td>
+        <td>Estructura</td>
+      </tr>
+      <tr>
+        <td>Ballesta</td>
+        <td>6</td>
+        <td>1600</td>
+        <td>43</td>
+        <td>Estructura</td>
+        <tr>
+          <td>Jaula del forzudo</td>
+          <td>4</td>
+          <td>780</td>
+          <td>134</td>
+          <td>Estructura</td>
+        </tr>
+    </table>
+  </main>
+  <footer>
+    <div class="sociales" id="personas">
+      <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+      <p><a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a></p>
+    </div>
+    <div class="sociales">
+      <p>Curso: 3M</p>
+      <p>Saint Mary of the Hills School Sede Pilar</p>
+      <a href="https://stmary.edu.ar" target="_blank"><img id="logocolegio" src="img/stmary.png"
+          alt="Logo de Saint Mary"></a>
+    </div>
+    <div class="sociales" id="iconos">
+      <a href="https://www.instagram.com/stmaryofthehillsschool" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j" target="_blank"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>

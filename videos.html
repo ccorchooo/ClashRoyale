@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Clash Royale - Videos</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/icon.ico" type="image/x-icon">
+  </head>
+  
+  <body>
+    <header>
+      <nav id="nav_inicio">
+        <div id="contenido_nav">
+          <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a>
+          <h1>Clash Royale</h1>
+        </div>
+        <div id="contenido_nav2">
+          <ul id="menu">
+            <li>
+              <a href="index.html" class="seleccionado">Inicio</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="index.html#celular">Descripción</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="cartas.html">Cartas</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="cartas.html#cartas">Cartas</a></li>
+                  <li><a href="cartas.html#link_pdf">PDF</a></li>
+                  <li><a href="cartas.html#tabla_cartas">Tabla de Estadísticas</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="estrategias.html">Estrategias</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="estrategias.html#estrategias_general">Estrategias generales</a></li>
+                  <li><a href="estrategias1.html">Arena 1</a></li>
+                  <li><a href="estrategias2.html">Arena 2</a></li>
+                  <li><a href="estrategias3.html">Arena 3</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="noticias.html">Noticias</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                  <li><a href="videos.html#videos">Videos</a></li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a href="tienda.html">Tienda</a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a></li>
+                  <li><a href="tienda.html#pase_tienda">Pase de diamante</a></li>
+                  <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div id="cuenta">
+            <input type="checkbox" id="login">
+            <label for="login" id="label_login"><i class="fa-solid fa-circle-user"></i></label>
+            <div id="login_form" class="form_usuario">
+              <h3>Iniciar Sesión</h3>
+              <form>
+                <label for="usuario_login">Usuario:</label>
+                <input type="text" id="usuario_login" required>
+                <label for="contraseña_login">Contraseña:</label>
+                <input type="password" id="contraseña_login" required>
+                <input type="submit" value="Iniciar Sesión">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="banner">
+        <img src="img/banner_noticias.jpg" alt="Banner Noticias">
+        <h2>Videos</h2>
+      </section>
+      <nav id="nav_noticias">
+        <section id="tipo_noticias">
+          <ul>
+            <li><a href="noticias.html">Noticias</a></li>
+            <li><a href="videos.html" class="seleccionado">Videos</a></li>
+          </ul>
+        </section>
+        <section id="buscar_noticias">
+          <input type="text" placeholder="Buscar videos..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </section>
+      </nav>
+      <section id="videos">
+        <div class="video">
+          <video src="videos/video1.mp4" controls>
+            <p>Tu navegador no soporta el elemento de video.</p>
+          </video>
+          <div class="descripcion_video">
+            <h3>Evolución de cartas</h3>
+          </div>
+        </div>
+        <div class="video">
+          <video src="videos/video2.mp4" controls>
+            <p>Tu navegador no soporta el elemento de video.</p>
+          </video>
+          <div class="descripcion_video">
+            <h3>¡Super Arqueras!</h3>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="sociales" id="personas">
+        <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+        <p><a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a></p>
+      </div>
+      <div class="sociales">
+        <p>Curso: 3M</p>
+        <p>Saint Mary of the Hills School Sede Pilar</p>
+        <a href="https://stmary.edu.ar" target="_blank"><img id="logocolegio" src="img/stmary.png"
+            alt="Logo de Saint Mary"></a>
+      </div>
+      <div class="sociales" id="iconos">
+        <a href="https://www.instagram.com/stmaryofthehillsschool" target="_blank"><i
+            class="fa-brands fa-instagram"></i></a>
+        <a href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j" target="_blank"><i
+            class="fa-brands fa-youtube"></i></a>
+        <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+      </div>
+    </footer>
+  </body>
+
+</html>

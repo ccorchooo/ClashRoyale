@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clash Royale - Tienda</title>
+  <link href="css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="icon" href="img/icon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav id="nav_inicio">
+      <div id="contenido_nav">
+        <a href="index.html"><img id="logo" src="img/logo.jpg" alt="Logo"></a>
+        <h1>Clash Royale</h1>
+      </div>
+      <div id="contenido_nav2">
+        <ul id="menu">
+          <li>
+            <a href="index.html">Inicio</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="index.html#celular">Descripción</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="cartas.html">Cartas</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="cartas.html#cartas">Cartas</a></li>
+                <li><a href="cartas.html#link_pdf">PDF</a></li>
+                <li><a href="cartas.html#tabla_cartas">Tabla de Estadísticas</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="estrategias.html">Estrategias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="estrategias.html#estrategias_general">Estrategias generales</a></li>
+                <li><a href="estrategias1.html">Arena 1</a></li>
+                <li><a href="estrategias2.html">Arena 2</a></li>
+                <li><a href="estrategias3.html">Arena 3</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="noticias.html">Noticias</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="noticias.html#noticias">Noticias diarias</a></li>
+                <li><a href="videos.html#videos">Videos</a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="tienda.html" class="seleccionado">Tienda</a>
+            <div class="dropdown">
+              <ul>
+                <li><a href="tienda.html#ofertas_tienda">Ofertas exclusivas</a></li>
+                <li><a href="tienda.html#pase_tienda">Pase de diamante</a></li>
+                <li><a href="tienda.html#puntos_tienda">Puntos</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <div id="cuenta">
+          <input type="checkbox" id="login">
+          <label for="login" id="label_login"><i class="fa-solid fa-circle-user"></i></label>
+          <div id="login_form" class="form_usuario">
+            <h3>Iniciar Sesión</h3>
+            <form>
+              <label for="usuario_login">Usuario:</label>
+              <input type="text" id="usuario_login" required>
+              <label for="contraseña_login">Contraseña:</label>
+              <input type="password" id="contraseña_login" required>
+              <input type="submit" value="Iniciar Sesión">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div id="btn_tienda">
+      <label for="check_tienda" id="label_tienda">Comprar</label>
+      <input type="checkbox" id="check_tienda" />
+      <aside id="comprar_tienda">
+        <div id="titulo_comprar">
+          <h2>Comprar</h2>
+        </div>
+        <div id="form_comprar">
+          <form>
+            <div class="divisor"></div>
+            <div class="seccion_comprar">
+              <i class="fa-solid fa-bag-shopping"></i>
+              <h3>Carrito</h3>
+            </div>
+            <label for="seleccionar_comprar">¿Qué querés comprar?</label>
+            <select id="seleccionar_comprar">
+              <option>Ofertas</option>
+              <option>Pase de diamante</option>
+              <option>Puntos</option>
+            </select>
+            <div class="divisor"></div>
+            <div class="seccion_comprar">
+              <i class="fa-solid fa-user"></i>
+              <h3>Usuario</h3>
+            </div>
+            <label for="usuario_comprar">Usuario del juego:</label>
+            <input type="text" id="usuario_comprar" required placeholder="MiUsuario">
+            <label for="mail_comprar">Email:</label>
+            <input type="email" id="mail_comprar" required placeholder="micorreo@correo.com">
+            <div class="divisor"></div>
+            <div class="seccion_comprar">
+              <i class="fa-solid fa-credit-card"></i>
+              <h3>Tarjeta</h3>
+            </div>
+            <input type="text" required placeholder="Nombre">
+            <input type="text" required placeholder="Apellido">
+            <input type="number" required placeholder="Número de tarjeta">
+            <input type="month" required>
+            <input type="number" required placeholder="CVV">
+            <div class="divisor"></div>
+            <input type="submit" value="Comprar">
+          </form>
+        </div>
+      </aside>
+    </div>
+    <section id="banner_tienda">
+      <img src="img/banner_tienda.webp" alt="Banner Tienda">
+      <h2>Tienda</h2>
+      <div class="carta_banner">
+        <i class="fa-solid fa-percent"></i>
+        <h3>Ofertas exclusivas</h3>
+        <p>Encontrá ofertas exclusivas mejores que en el juego. Solo acá.</p>
+      </div>
+      <div class="carta_banner">
+        <i class="fa-solid fa-coins"></i>
+        <h3>Ganá puntos</h3>
+        <p>Con cada compra, ganá puntos que puedas canjear por recompensas.</p>
+      </div>
+      <div class="carta_banner">
+        <i class="fa-solid fa-gem"></i>
+        <h3>Pase de diamante</h3>
+        <p>Comprá el pase de diamante, y desbloquéalo en el juego.</p>
+      </div>
+    </section>
+    <section id="tienda">
+      <h2>Ofertas</h2>
+      <article id="ofertas_tienda">
+        <div class="oferta">
+          <h3>Desbloquea el principito</h3>
+          <img src="img/cartas/princi.png" alt="compra_principito">
+          <div class="comprar">
+            <h4>Comprar</h4>
+          </div>
+        </div>
+
+        <div class="oferta">
+          <h3>Desbloquea la evolución</h3>
+          <img src="img/evoduende.png" alt="compra_principito">
+          <div class="comprar">
+            <h4>Comprar</h4>
+          </div>
+        </div>
+      </article>
+      <article id="pase_tienda">
+        <h2>Pase de diamante</h2>
+        <table id="tabla_pase">
+          <tr>
+            <th>Pase Base</th>
+            <th>Pase Plus</th>
+            <th>Pase Royale</th>
+          </tr>
+          <tr class="titulo_tabla">
+            <td colspan="3">Precio</td>
+          </tr>
+          <tr>
+            <td>4.99 $</td>
+            <td>9.99 $</td>
+            <td>19.99 $</td>
+          </tr>
+          <tr class="titulo_tabla">
+            <td colspan="3">Beneficios</td>
+          </tr>
+          <tr>
+            <td>3 fragmentos de evolución (media evolución)</td>
+            <td>6 fragmentos de evolución (una evolución)</td>
+            <td>12 fragmentos de evolución (dos evoluciones)</td>
+          </tr>
+          <tr>
+            <td>10 cubos de la suerte</td>
+            <td>20 cubos de la suerte</td>
+            <td>40 cubos de la suerte</td>
+          </tr>
+          <tr>
+            <td>Nombre de bronce</td>
+            <td>Nombre dorado</td>
+            <td>Nombre de diamante</td>
+          </tr>
+          <tr>
+            <td>1000 comodines</td>
+            <td>2000 comodines</td>
+            <td>4000 comodines</td>
+          </tr>
+          <tr>
+            <td>1500 gemas</td>
+            <td>3000 gemas</td>
+            <td>5000 gemas</td>
+          </tr>
+          <tr>
+            <td>1 reacción</td>
+            <td>2 reacciones</td>
+            <td>5 reacciones EXCLUSIVAS</td>
+          </tr>
+        </table>
+      </article>
+      <h2>Puntos</h2>
+      <article id="puntos_tienda">
+        <div class="puntos">
+          <h3>Reclama 3 cartas del tronco</h3>
+          <img src="img/cartas/tronco.png" alt="tronco_reclamar">
+          <div class="comprar">
+            <h4>Comprar</h4>
+          </div>
+        </div>
+        <div class="puntos">
+          <h3>Reclama un nuevo nivel del cocinero</h3>
+          <img src="img/cartas/cocinero.png" alt="cocinero_reclamar">
+          <div class="comprar">
+            <h4>Comprar</h4>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <div class="sociales" id="personas">
+      <p><a href="mailto:alu.melilloa@stmary.edu.ar">Augusto Melillo</a></p>
+      <p><a href="mailto:alu.goldonovoaf@stmary.edu.ar">Franco Gold Novoa</a></p>
+    </div>
+    <div class="sociales">
+      <p>Curso: 3M</p>
+      <p>Saint Mary of the Hills School Sede Pilar</p>
+      <a href="https://stmary.edu.ar" target="_blank"><img id="logocolegio" src="img/stmary.png"
+          alt="Logo de Saint Mary"></a>
+    </div>
+    <div class="sociales" id="iconos">
+      <a href="https://www.instagram.com/stmaryofthehillsschool" target="_blank"><i
+          class="fa-brands fa-instagram"></i></a>
+      <a href="https://youtube.com/@st.maryofthehillsschool1026?si=905SFX67w1_Srx_j" target="_blank"><i
+          class="fa-brands fa-youtube"></i></a>
+      <a href="https://facebook.com/stmaryofthehillsschool" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>
